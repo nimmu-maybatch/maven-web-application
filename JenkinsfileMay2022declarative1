@@ -9,6 +9,9 @@ pipeline{
   pollSCM ('* * * * *')
   corn ('* * * * *')
 }
+options{
+timestamps()
+}
     
 stages{
 //get the code from github
