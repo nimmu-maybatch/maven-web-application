@@ -4,6 +4,11 @@ pipeline{
     tools {
         maven "maven3.8.5"
     }
+    //build pollSCM
+    triggers {
+  pollSCM ('* * * * *')
+  corn ('* * * * *')
+}
     
 stages{
 //get the code from github
