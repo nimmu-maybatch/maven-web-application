@@ -7,7 +7,7 @@ pipeline{
     //build pollSCM
     triggers {
   pollSCM ('* * * * *')
-  cron ('* * * * *')
+//  cron ('* * * * *')
 }
 options{
 timestamps()
